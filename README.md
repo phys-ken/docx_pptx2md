@@ -30,4 +30,5 @@ pip install pptx2md
   * かなり便利なソフト
 
 ## おまけ
-* enToJa.pyは、昔使ったpptxを日本語に翻訳するプログラムです。とりあえず入れておく。
+* enToJa.pyは、昔使ったpptxを日本語に翻訳するプログラムです。うろ覚えですが、とりあえず配布します。
+* [Pythonでパワポスライドを自動翻訳する](https://qiita.com/code_440/items/9998d97b480db82ef738)
