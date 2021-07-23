@@ -13,6 +13,14 @@ pip install pptx2md
 * inputfに、変換したいデータが入ったフォルダを保存します。
 * docx2mdを実行すれば、フォルダ構造を保ったまま、outputfに出力されます。
 
+## 処理の詳細
+* シェルスクリプトでinputfのフォルダ構造をoutputfに複製します。
+* パスを受けて、pandocでwordをmdに変換します。
+* imgの出力に癖がある([参考](https://stackoverflow.com/questions/39956497/pandoc-convert-docx-to-markdown-with-embedded-images))ので、以下の手順でPythonで解決しました。
+  * 画像出力専用のフォルダを作る。
+  * replace_path.pyをシェルスクリプトから呼び出し、作成したmdの相対パスを修正する。
+  * 画像のサイズ指定のタグが中途半端に残ってしまうので、replace_path.pyで取っちゃう。
+* pptxをmdに直すのは、全く別の処理になります。pptx2md.pyで、フォルダをos.walkしながら、すでにあるoutputfにデータを書き出します。
 
 
 ## 参考にしたサイト

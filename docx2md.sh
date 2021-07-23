@@ -22,8 +22,11 @@ do
     echo "output path"
     echo $md_output_path
     echo "#############"
+    mkdir ./outputf/${md_path}/${string_filename_without_extension}/
+    pandoc .${path}  --extract-media ./outputf/${md_path}/${string_filename_without_extension}/  -o ./outputf/${md_output_path} 
+    
+    python replace_path.py ./outputf/${md_output_path} ./outputf/${md_path}/
 
-    pandoc .${path}  --extract-media ./outputf/${md_path}/  -o ./outputf/${md_output_path} 
 done
 
 python pptx2md.py
