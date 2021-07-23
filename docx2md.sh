@@ -23,7 +23,7 @@ do
     echo $md_output_path
     echo "#############"
 
-    pandoc .${path}  -o ./outputf/${md_output_path}
+    pandoc .${path}  --extract-media ./outputf/${md_path}/  -o ./outputf/${md_output_path} 
 done
 
 python pptx2md.py
