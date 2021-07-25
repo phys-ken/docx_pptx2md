@@ -1,8 +1,10 @@
-## 引数をふたつとる
-# filename , text
+# coding:utf-8
 
 import sys
 import re
+
+# 引数をふたつとる
+# filename , text
 
 print (sys.argv[0])
 print (sys.argv[1])

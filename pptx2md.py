@@ -1,8 +1,11 @@
-# docx2md.shから呼び出す
-# pip install pptx2md
+# coding:utf-8
 
 import os
 import subprocess
+
+# docx2md.shから呼び出す
+# pip install pptx2md
+
 
 count = 0
 for current, subfolders, subfiles in os.walk("inputf"):
