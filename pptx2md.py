@@ -15,7 +15,7 @@ for current, subfolders, subfiles in os.walk("inputf"):
             fullPath = current + "/" + fileName
             print(fullPath)
             count = count + 1
-            result = subprocess.run(['pptx2md', fullPath ,'-o' , 'outputf/' + current + '/pptx' + base + '.md' ])
+            result = subprocess.run(['pptx2md', fullPath ,'-o' , 'outputf/' + current + '/pptx' + base + '.md' , '--disable_wmf' ])
             print(result)
 
         else:
