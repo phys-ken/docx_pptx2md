@@ -1,6 +1,7 @@
 # docxとpptxをmdに変換します
 
 ## 事前準備
+* シェルスクリプトやpythonのスクリプトから、各種パッケージやソフトを呼び出します。事前準備で示すソフトが入っていないと、このコードは動作しません。
 * pandocのインストール : [参考](https://qiita.com/sky_y/items/3c5c46ebd319490907e8)
 * pythonのインストール
 * pptx2mdのインストール
@@ -11,7 +12,7 @@ pip install pptx2md
 ## 使い方
 * docx2md.shと同じ階層に、outputfと、inputfという名前のフォルダを作ります。
 * inputfに、変換したいデータが入ったフォルダを保存します。
-* docx2mdを実行すれば、フォルダ構造を保ったまま、outputfに出力されます。
+* docx2md.shを実行すれば、フォルダ構造を保ったまま、outputfに出力されます。
 
 ## 処理の詳細
 * シェルスクリプトでinputfのフォルダ構造をoutputfに複製します。
@@ -28,6 +29,7 @@ pip install pptx2md
   * シェルスクリプトはほぼこの通りです。
 * [pptx2md](https://github.com/ssine/pptx2md)
   * かなり便利なソフト
+  * くだらない操作ミスでerrorを吐かれた時も、[作者のssineさん](https://github.com/ssine/pptx2md)にissuesで質問したら、早速回答してくださいました。Thank you!
 
 ## おまけ
 * enToJa.pyは、昔使ったpptxを日本語に翻訳するプログラムです。うろ覚えですが、とりあえず配布します。
