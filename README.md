@@ -10,9 +10,9 @@ pip install pptx2md
 ```
 
 ## 使い方
-* docx2md.shと同じ階層に、outputfと、inputfという名前のフォルダを作ります。
+* docx_pptx2md.shと同じ階層に、outputfと、inputfという名前のフォルダを作ります。
 * inputfに、変換したいデータが入ったフォルダを保存します。
-* docx2md.shを実行すれば、フォルダ構造を保ったまま、outputfに出力されます。
+* docx_pptx2md.shを実行すれば、フォルダ構造を保ったまま、outputfに出力されます。
 
 ## 処理の詳細
 * シェルスクリプトでinputfのフォルダ構造をoutputfに複製します。
